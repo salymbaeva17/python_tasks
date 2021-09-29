@@ -11,3 +11,10 @@ print(list2)
 
 s = [1, 2, 3, 'a', ['b', 'c', 'python'], 4, 5, []]
 print(s[4][2])  # python
+
+a = input("boy or girl: ").lower()
+b = int(input("kg: "))
+if a == "boy" and b >= 10 or a == "girl" and b >= 5:
+    print("Great job, you got 5")
+else:
+    print("Try again")
