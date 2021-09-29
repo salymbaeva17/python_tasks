@@ -19,8 +19,20 @@
 # else:
 #     print("Try again")
 
-# num = input("Enter 3 numbers: ").split()
-# print(num)
-# print(min([int(num[0]), int(num[1]), int(num[2])]))
-# a, b, c = int(input(": ")), int(input(": ")), int(input(": "))
-# print(min([a, b, c]))
+
+a = int(input(": "))
+b = int(input(": "))
+c = int(input(": "))
+
+if a < b and a < c:
+    print(a)
+elif a > b and b < c:
+    print(b)
+elif c < a and b > c:
+    print(c)
+
+num = input("Enter 3 numbers: ").split()
+print(num)
+print(min([int(num[0]), int(num[1]), int(num[2])]))
+a, b, c = int(input(": ")), int(input(": ")), int(input(": "))
+print(min([a, b, c]))
